@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./styleee.css">
+    <script src="./geometria.js"></script>
+
+
+</head>
+<body>
+    <header>
+         
+        <nav>
+            <div>
+                <img src="./assets/calculador-removebg-preview.png" alt="">
+
+            </div>
+            <ul>
+                <li>
+                    <a href="./index.html" target="_blank" rel="noopener noreferrer">Incio</a>
+                </li>
+                <li>
+                    <a href="./porcentaje.html" target="_blank" rel="noopener noreferrer">Calculadora de porcentaje</a>
+                </li>
+                <li>
+                    <a href="./promedio.html" target="_blank" rel="noopener noreferrer">Calculadora de promedio</a>
+                </li>
+                <li>
+                    <a href="./salario.html" target="_blank" rel="noopener noreferrer">Calculadora de salario</a>
+                </li>
+            </ul>
+        </nav>
+     
+</header>
+  
+   
+        
+
+    <main>
+
+        <div class="container-instructions">
+            <h1>
+                Calculadora de figuras geometricas
+            </h1>
+            <p>En esta calculadora te ayudaremos a poder resolver tus ejercicos con la busqueda de parametros y areas de distintas figuras</p>
+        </div>
+
+         <section class="content-box">
+        <div class="principal-text_title">
+            <h2>Cuadrado
+            </h2>
+            <img src="./assets/cuadrado.png" class="imagen-figuras" alt="">
+        </div>
+
+        <form >
+            <label for="inputCuadrado">Lados de tu cuadrado</label>
+            <input type="number" id="inputCuadrado" placeholder="Escribe cuanto mide cada lado de tu cuadrado"> 
+            
+            <div class="button">
+                
+                <button  type="button" onclick="perimetoDelCuadrado()">
+                Calcular el perimetro
+            </button>
+
+            <button type="button" onclick="areaDelCuadrado()">
+                Calcular el area 
+            </button>
+        </div>
+
+        <div class="result-contain resultado-margin">
+            <p class="resultado">El resultado final es: <span id="respuestaCuadrado"></span></p>
+       </div>
+        </form>
+    </section>
+    
+
+    <section class="content-box">
+      <div  class="principal-text_title">
+        <h3>El triangulo</h3>
+        <img src="./assets/triangulo.png" class="imagen-figuras" alt="">
+      </div>
+    
+    <form >
+        <label for="inputTrianguloA"> Escribe las medidas del lado A del triangulo</label>
+        <input type="number" placeholder="Lado A" id="inputTrianguloA">
+
+        <label for="inputTrianguloB">Escribe las medidas del lado B del triangulo</label>
+        <input type="numer" placeholder="Lado B" id="inputTrianguloB">
+       
+        <label for="inputTrianguloBase">Escribe las medidas de la base</label>
+        <input type="number" placeholder="Base" id="inputTrianguloBase">
+
+        <label for="inputTrianguloAltura">Escribe las medidas de la altura</label>
+        <input type="number" placeholder="Altura" id="inputTrianguloAltura">
+
+        <div class="button">
+            <button type="button" onclick="calcularPerimetroTriangulo()"> Calcular el perimetro</button>
+
+        <button type="button"  onclick="calcularAreaTriangulo()"> Calcular el area</button>
+        </div>
+
+        <div class="result-contain">
+            <p class="resultado">El resultado final es: <span id="respuestaTriangulo"></span></p>
+       </div>
+
+    </form>
+     </section>
+
+
+
+    <section class="content-box">
+    <div  class="principal-text_title">
+         <h3>El circulo</h3>
+         <img src="./assets/circulo.png" class="imagen-figuras" alt="">
+    </div>
+       
+        <form >
+            <label for="inputDiametro">Cual es el diametro de tu circulo?</label>
+            <input type="number" id="inputDiametro" placeholder="Diametro">
+
+            <label for="inputRadio">
+                Cual es el radio de tu circulo?
+            </label>
+            <input type="number" id="inputRadio" placeholder="Radio">
+
+        <div class="button">
+
+             <button type="button"  onclick="calcularPerimetroCirculo()">Calcular el perimetro</button>
+
+            <button type="button"   onclick="calcularAreaCirculo()">Calcular el area</button>
+        </div>
+     
+        <div class="result-contain resultado-margin">
+            <p class="resultado">El resultado final es: <span id="respuestaCirculo"></span></p>
+       </div>
+
+        </form>
+    </section>
+
+
+
+        <section class="content-box">
+    <div  class="principal-text_title">
+        <h3>Triangulo Isosceles</h3>
+        <img src="./assets/isosceles.png" class="imagen-figuras" alt="">
+    </div>
+    <form >
+        <label for="ladoAIsoseles">Lado A de tu triangulo</label>
+        <input type="number"  id="ladoAIsoseles" placeholder="Lado A">
+
+        <label for="ladoBIsoseles">Lado B de tu triangulo</label>
+        <input type="number"  id="ladoBIsoseles" placeholder="Lado B">
+
+        <label for="baseIsoseles">Base de tu triangulo</label>
+        <input type="number"  id="baseIsoseles" placeholder="Base">
+
+
+        <div class="button">
+            <button type="button"  onclick="alturaIsoseles()"> Calcular la altura</button>
+        </div>
+
+        <div class="result-contain resultado-margin">
+            <p class="resultado">El resultado final es: <span id="respuestaIsosceles"></span></p>
+       </div>
+
+    </form>
+</section>
+
+    </main>
+ 
+</body>
+</html>

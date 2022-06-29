@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+      font-family: 'Josefin Sans', sans-serif; 
+     
+   
+}
+
+
+
+header{ 
+    display: flex;
+  height: 100%;
+  align-items: center;
+   color: white;
+    
+   background: linear-gradient(270deg, #878591, #11065a);
+   background-size: 400% 400%;
+  
+   animation: AnimationName  37s ease infinite;
+  }
+  
+  @keyframes AnimationName {
+   0%{background-position:18% 0%}
+   50%{background-position:83% 100%}
+   100%{background-position:18% 0%}
+  }
+  
+  
+  
+  header nav{display: flex;
+  width: 100%;
+  justify-content: space-around; }
+  
+   nav div{
+      margin-right: 1t50px;
+   }
+  
+  nav ul{
+      display: flex;
+      justify-content: flex-end;
+     list-style: none;
+     align-items: center;
+     
+  }
+  
+  nav ul a {
+      margin: 20px;
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+  }
+  
+  nav ul a:hover{
+      color:rgb(136, 67, 67);
+      text-decoration: underline;
+  }
+
+
+  main{
+    height: 170vh;
+    background-image: url(./assets/fondoModa.png);
+    color: #fff;
+  }
+
+.container-instruction  {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 64px;
+}
+
+.container-instruction h1{
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
+
+.container-form{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+}
+
+.container-form form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height:300px;  
+    background-color: rgba(13, 12, 70, 0.93);
+    box-shadow: 4px 4px 4px #fff, -4px -4px 4px #fff;   
+    border-radius: 12px;
+    color: #fff;
+    max-width: 400px;
+    min-width:250px;
+    justify-content:center;
+    margin: 0 45px;
+   
+}
+
+.container-form form:nth-child(3){
+     margin-top: 50px;
+}
+
+.form-instruction{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form-instruction h3 {
+    margin-bottom: 8px;
+}
+
+.form-instruction p {
+    text-align: center;
+}
+
+form label{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+form input{
+    width: 80%;
+    height: 28px;
+    border-radius: 10px;
+    border: 0;
+    margin: 0 auto; 
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 5px;
+
+}
+ 
+form input::placeholder{
+    padding-left: 10px;
+}
+
+form input:hover{
+    box-shadow: 5px 5px 5px rgb(102, 99, 99);
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    
+}
+
+button{
+    
+    font-size: 16px;
+    font-weight:bold;
+    padding: 6px 40px;
+     border: 1px solid rgb(34, 21, 21) ; 
+     border-radius: 5px;
+    background-color: rgba(155, 180, 218, 0.836);
+    color: rgb(34, 24, 24);
+    cursor: pointer;
+    margin-top: 20px;
+    
+}
+
+button:hover{
+    color: white;
+    background-color: rgb(9, 1, 44);
+    border-color: white;
+}
+
+.resultado{
+    background-color: rgba(1, 63, 20, 0.904);
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+     padding: 4px;  
+  
+  border-radius: 8px;
+
+text-align: center;
+font-size:16px;
+}
+
+
+
+@media screen and (max-width:979px){
+
+    main{
+        height: 250vh;
+    }
+
+    .container-form form:nth-child(2){
+        margin-top: 50px;
+   }
+
+   .container-instruction{
+    width: 70%;
+    text-align: center;
+    margin:  0 auto;
+    margin-bottom: 64px;
+   }
+}
+
+
+
+@media screen and (max-width:580px){
+    nav ul{
+        display: none;
+    }
+}

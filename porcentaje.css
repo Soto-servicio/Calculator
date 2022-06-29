@@ -1,0 +1,25 @@
+ 
+ 
+ main{background-image: url(./assets/descuento.jpg);
+    height: 100vh;
+}
+
+.content-box{
+    margin: 50px auto;
+    height: 500px;
+    width: 60%;
+}
+
+.imagen-figuras{
+    width: 160px;
+}
+
+ 
+@media screen and (max-width:700px){
+    .principal-text_title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

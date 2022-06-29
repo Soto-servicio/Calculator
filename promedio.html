@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Calculadora de promedio</title>
+    <link rel="stylesheet" href="./promedio.css">
+   
+</head>
+<body>
+    <header>
+         
+            <nav>
+                <div>
+                    <img src="./assets/calculador-removebg-preview.png" alt="">
+    
+                </div>
+                <ul>
+                    <li>
+                        <a href="./index.html" target="_blank" rel="noopener noreferrer">Incio</a>
+                    </li>
+                    <li>
+                        <a href="./geometrica.html" target="_blank" rel="noopener noreferrer">Calculadora geometrica</a>
+                    </li>
+                    <li>
+                        <a href="./salario.html" target="_blank" rel="noopener noreferrer">Calculadora de salario</a>
+                    </li>
+                    <li>
+                        <a href="./porcentaje.html" target="_blank" rel="noopener noreferrer">Calculadora de porcentaje</a>
+                    </li>
+                </ul>
+            </nav>
+         
+    </header>
+    <main>
+        <section class="container-instruction">
+            
+            <h1>
+                Calculadoras de promedio aritmetico y promedio de moda
+            </h1>
+            <p> Recuerda separar cada factor con una coma ","</p>
+        </section>
+
+        <section class="container-form">
+
+        
+         <form action="">
+            <div class="form-instruction">
+                <h3>Promedio aritmetico</h3>
+                <p>Recuerda separar cada dato con una coma "," para obtener tu resultado</p>
+            </div>
+        <label for="promedioInput">
+        Aritmetica
+        </label>
+        <input type="text"  id="promedioInput" placeholder="Ej. 5, 25, 50, 100">
+        <div class="button">
+             <button type="button" onclick="promedioCalcular()">
+            Click
+        </button>
+        </div>
+       
+        <p class="resultado resultado_promedio">Tu resultado es:</p>
+    </form>
+
+    <form action="">
+        <div class="form-instruction">
+            <h3>Promedio aritmetico</h3>
+            <p>Recuerda separar cada dato con una coma "," para obtener tu resultado</p>
+        </div>
+    <label for="promedioMediana">
+    Mediana
+    </label>
+    <input type="text"  id="promedioMediana" placeholder="Ej. 5, 25, 50, 100">
+    <div class="button">
+         <button type="button" onclick="calcularMedia()">
+        Click
+    </button>
+    </div>
+   
+    <p class="resultado resultado_mediana">Tu resultado es:</p>
+</form>
+
+
+
+    <form >
+        <div class="form-instruction">
+            <h3>Promedio de moda</h3>
+            <p>Recuerda separar cada dato con una coma "," para obtener tu resultado</p>
+        </div>
+        <label for="modaInput">Moda</label>
+            <input type="text" id="modaInput" placeholder="Ej. 5, 25, 50, 100">
+
+            <div class="button">
+                 <button type="button" onclick="calcularmoda()">
+                Click
+            </button>
+            </div>
+           
+            <p class="resultado resultado_moda">Tu resultado es:</p>
+    </form>
+
+    </section>
+    </main>
+   
+</body>
+ <script src="./promedio.js"></script>
+ <script src="./moda.js"></script>
+ <script src="./mediana.js"></script>
+</html>
